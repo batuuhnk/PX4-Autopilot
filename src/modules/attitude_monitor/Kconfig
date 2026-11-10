@@ -1,0 +1,5 @@
+menuconfig MODULES_ATTITUDE_MONITOR
+	bool "attitude_monitor"
+	default n
+	---help---
+		Event-driven work queue module that monitors vehicle attitude (learning project)
