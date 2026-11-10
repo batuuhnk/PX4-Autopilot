@@ -1,0 +1,5 @@
+menuconfig MODULES_SIMULATION_BARO_NOISE_SIM
+	bool "baro_noise_sim"
+	default n
+	---help---
+		Simulated barometer with configurable noise, drift and faults (learning project)
