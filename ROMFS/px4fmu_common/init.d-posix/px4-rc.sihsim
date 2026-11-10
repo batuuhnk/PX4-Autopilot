@@ -31,6 +31,14 @@ if simulator_sih start; then
 	then
 		sensor_agp_sim start
 	fi
+	if param compare -s BNS_EN 1
+	then
+		baro_noise_sim start
+	fi
+	if param compare -s AM_EN 1
+	then
+		attitude_monitor start
+	fi
 
 else
 	echo "ERROR [init] simulator_sih failed to start"
